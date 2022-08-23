@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="81.715">
+    <testcase classname="I am validating the orangeHRM application" name="To Test Login With Valid Data" time="49.746">
+        <system-out><![CDATA[Given Open the browser and go to the Login page of OrangeHRM................passed
+When Enter the valid name "Admin"...........................................passed
+And Enter the valid password "admin123".....................................passed
+And Click on Login button...................................................passed
+Then I should see the username as "Welcome Paul"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="I am validating the orangeHRM application" name="To Test Login With Valid Data 2" time="17.391">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=104.0.5112.81)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-L0CPOHI', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\FORZAF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9e68716c483c7208e3ccf570e0ca3a89&#10;*** Element info: {Using=id, value=welcome}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given Open the browser and go to the Login page of OrangeHRM................passed
+When Enter the valid name "Admin"...........................................passed
+And Enter the valid password "admin123".....................................passed
+And Click on Login button...................................................passed
+Then I should see the username as "Welcome Paul"............................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-L0CPOHI', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\FORZAF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e68716c483c7208e3ccf570e0ca3a89
+*** Element info: {Using=id, value=welcome}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepdefintion.definition.i_should_see_the_username_as(definition.java:43)
+	at ✽.I should see the username as "Welcome Paul"(file:///C:/Users/Forza%20Ferrari/eclipse-workspace/cucm/src/test/resources/login/login.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="I am validating the orangeHRM application" name="To Test Login With Valid Data 3" time="14.076">
+        <system-out><![CDATA[Given Open the browser and go to the Login page of OrangeHRM................passed
+When Enter the valid name "Admin"...........................................passed
+And Enter the valid password "admin123".....................................passed
+And Click on Login button...................................................passed
+Then I should see the username as "Welcome Paul"............................passed
+]]></system-out>
+    </testcase>
+</testsuite>
